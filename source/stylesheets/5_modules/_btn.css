@@ -1,0 +1,166 @@
+/* ==|====================
+   Elements/Buttons
+   ======================= */
+.footer-buttons .button-container button {
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  border: 2px solid #ccc;
+  margin: 20px;
+  background-color: #fff;
+  font-weight: bold;
+  color: orange;
+  font-size: 35px;
+}
+
+.button {
+  border: 0px;
+}
+
+.btn {
+   display: inline-block;
+   /* vertical-align: middle; */
+   margin: .4rem;
+   padding: 1rem;
+   cursor: pointer;
+   background: #e1e1e1;
+   text-decoration: none;
+   color: #666;
+   -webkit-tap-highlight-color: rgba(0,0,0,0);
+   outine: 0px;
+   border: 1px solid transparent;
+   border-radius: 2px;
+}
+
+/* ------------
+   Colors
+   ------------ */
+.btn-primary,
+.btn-secondary,
+.btn-success,
+.btn-warning,
+.btn-error {
+  color: white;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+
+}
+
+.btn-secondary {
+
+}
+
+.btn-success {
+
+}
+
+.btn-warning {
+
+}
+
+.btn-error {
+
+}
+
+/* ------------
+   Sizes
+   ------------ */
+.btn-xsmall {
+
+}
+
+.btn-small {
+
+}
+
+.btn-large {
+  font-size: 17px;
+  font-weight: 500;
+  padding: 20px 30px;
+}
+
+.btn-xlarge {
+
+}
+
+/* ------------
+   Hamburger
+   ------------ */
+.lines-button {
+  transition: .3s;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  border: 0px;
+  height: 50px;
+  width: 50px;
+  top: 6px;
+  padding-bottom: 5px;
+  background-color: transparent;
+}
+
+.lines-button:focus, .lines-button:active {
+  outline: 0px;
+}
+
+.lines-button:hover {
+  opacity: 1;
+}
+
+#content-wrapper.toggled .content-area .main-nav .lines-button {
+  transform: scale3d(0.8, 0.8, 0.8);
+}
+
+.lines {
+  display: inline-block;
+  width: 3rem;
+  height: 0.4rem;
+  background: #888;
+  transition: 0.3s;
+  position: relative;
+  cursor: pointer;
+}
+
+#content-wrapper.toggled .content-area .main-nav .lines-button.x .lines {
+  background: transparent;
+}
+
+.lines:before, .lines:after {
+  display: inline-block;
+  width: 3rem;
+  height: 0.4rem;
+  background: #888;
+  transition: 0.3s;
+  position: absolute;
+  left: 0;
+  content: '';
+  transform-origin: 0.28571rem center;
+}
+
+#content-wrapper.toggled .content-area .main-nav .lines-button.x .lines:before,
+#content-wrapper.toggled .content-area .main-nav .lines-button.x .lines:after {
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    top: 0;
+    width: 4rem;
+}
+
+.lines:before {
+  top: 1rem;
+}
+
+#content-wrapper.toggled .content-area .main-nav .lines-button.x .lines:before {
+  transform: rotate3d(0, 0, 1, 45deg);
+}
+
+.lines:after {
+  top: -1rem;
+}
+
+#content-wrapper.toggled .content-area .main-nav .lines-button.x .lines:after {
+  transform: rotate3d(0, 0, 1, -45deg);
+}

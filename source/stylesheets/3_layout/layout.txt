@@ -1,0 +1,4 @@
+LAYOUT Styles
+
+Layout styles determine the major components of the page. These components
+make up the main shell of the application

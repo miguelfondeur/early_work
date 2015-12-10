@@ -1,0 +1,18 @@
+/* ==|====================
+   Behaviors/Sidebar-open
+   ======================= */
+.sidebar-open {
+	padding-right: 280px;
+	transition: var(--transition);
+}
+
+.sidebar-open .side-bar-wrapper {
+  margin-right: -280px;
+  right: 280px;
+}
+
+@media (--max_container) {
+.sidebar-open {
+    width: 100%;
+  }
+}

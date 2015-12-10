@@ -1,0 +1,92 @@
+/* ==|====================
+   Base
+   ======================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size:62.5%;
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+}
+
+body {
+  margin: 0px;
+  font-family: var(--font_secondary);
+  font-weight: 300;
+  font-size: 1.6rem;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  background-image: -webkit-radial-gradient(center center, circle cover, #fff 50%, #eee, lightblue 90%);
+}
+
+hr {
+
+}
+
+figure {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: var(--color_primary);
+  text-decoration: none;
+}
+
+a:hover {
+
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h1,h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: var(--font_primary);
+  font-weight: var(--font-weight_medium);
+  font-variant: small-caps;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+p {
+  margin: 0 0 20px 0;
+  font-size: 1.6rem;
+}
+
+button {
+  background: transparent;
+  border: 1px solid;
+}
+
+button:focus {outline:0;}

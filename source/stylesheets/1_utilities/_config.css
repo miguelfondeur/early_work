@@ -1,0 +1,56 @@
+/* ==|====================
+   Utilities/Config
+   ======================= */
+
+@charset "UTF-8";
+
+/*Google Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Exo:400,300,200,500);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,700,400italic);
+
+:root {
+
+  /*Font Settings*/
+  --base__font-size         : 1.6rem;
+  --base__line              : 2.4rem;
+  --font-weight_thin        : 100;
+  --font-weight_light       : 300;
+  --font-weight_medium      : 400;
+  --font-weight_bold        : 700;
+  --font_primary            : "Exo", serif;
+  --font_secondary          : "Lato", serif;
+
+
+  /*Colors*/
+  --white           : white;
+  --black           : #0b0b0b;
+  --grey            : #797e83;
+
+  --green           : #0FC4C8;
+  --blue            : #1C77C3;
+  --purple          : #99A8DD;
+  --yellow          : #FFF275;
+  --orange          : #FF8C42;
+  --dark-blue       : #4464AD;
+
+  /*Color Usage*/
+  --color_primary   : var(--blue);
+  --color_secondary : var(--green);
+  --color_accent    : var(--orange);
+  --color_shadow    : var(--black);
+
+  /*Border radius*/
+  --br_default      : .4em;
+  --br_round        : 50%;
+
+  /*Transitions*/
+  --transition      : all 0.3s ease;
+
+  /*Container*/
+  --container       : 100%;
+}
+
+/*Media Queries*/
+@custom-media --min_container (min-width: 1600px);
+@custom-media --max_container (max-width: 1600px);
+@custom-media --tablet (max-width: 768px);

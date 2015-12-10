@@ -1,0 +1,5 @@
+BEHAVIORS
+
+Behaviors are standalone javascript components that describe how page
+elements should act, but not how they should appear. Behaviors include
+things like form validation, state management, and API request routing.

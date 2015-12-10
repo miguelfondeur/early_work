@@ -1,0 +1,5 @@
+MODULES
+
+Modules are components that include both a definition of how they appear
+and how they behave. These include components like, accordions,
+dropdowns, and popups.

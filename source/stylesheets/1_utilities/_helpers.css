@@ -1,0 +1,52 @@
+/* ==|====================
+   Utilities/Helpers
+   ======================= */
+
+/*Clearfix*/
+
+.clearfix:matches(:after) {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+/*Screen reader text*/
+
+.srt {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/*Center alignment*/
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/*Center elements*/
+
+.centered {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hide {
+  display: none;
+}
+
+/*Thumbnail*/
+.thumb {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
