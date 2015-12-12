@@ -1,0 +1,21 @@
+/* ==|====================
+  Modules/Marketing-Panel
+  ======================= */
+
+.marketing-panel {
+  padding: 100px 0;
+  border-bottom: 4px solid black;
+}
+
+.marketing-panel__title, .marketing-panel__text {
+  text-align: center;
+  width: 768px;
+  margin: 0 auto;
+}
+
+.picture-overlay {
+  background: url(/images/bridge.jpg) no-repeat center center fixed;
+  background-size: cover;
+  background-color: #444;
+  background-blend-mode: multiply;
+}

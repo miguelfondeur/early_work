@@ -2,21 +2,28 @@
   Layout/Main
   ======================= */
 
-.site-content {
-  flex: 1 0 auto;
-  padding: 1.5em 1.5em 0;
+.main-wrapper {
+  overflow: scroll;
   width: 100%;
-  z-index: 2;
-  min-height: 405px;
 }
 
+.content-wrapper {
+  margin: 0 auto;
+  width: 100%
+}
 
-.container {
-  width: 250px;
-  height: 210px;
-  position: relative;
-  margin: 0 auto 40px;
-  -webkit-perspective: 1100px;
-  perspective: 1100px;
-  border-radius: 50%;
+.main-content {
+  flex: 1 0 auto;
+}
+
+@media(--max_container) {
+  .content-wrapper {
+    width: 960px;
+  }
+}
+
+@media(--min_container) {
+  .content-wrapper {
+    width: 1200px;
+  }
 }

@@ -51,6 +51,6 @@
 }
 
 /*Media Queries*/
-@custom-media --min_container (min-width: 1600px);
 @custom-media --max_container (max-width: 1600px);
+@custom-media --min_container (min-width: 1600px);
 @custom-media --tablet (max-width: 768px);

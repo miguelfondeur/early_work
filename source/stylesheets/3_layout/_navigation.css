@@ -1,3 +1,41 @@
 /* ==|====================
   Layout/Navigation
   ======================= */
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  border-bottom: 4px solid black;
+}
+
+.navbar--top {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+  height: 60px;
+}
+
+.nav__item a{
+  padding: 0px 5px;
+  color: gray;
+}
+
+.nav__title {
+  margin-right: auto;
+}
+
+.nav__title a {
+  color: black;
+  font-weight: 500;
+  font-size: 2.5rem;
+}

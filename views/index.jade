@@ -1,5 +1,100 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  main.main-wrapper
+    
+    div.main-content
+      
+      nav.navbar.navbar--top
+        div.content-wrapper     
+          ul.nav.nav--left
+            li.nav__item.nav__title
+              a(hfref="#") Miguel Fondeur
+            li.nav__item
+              a(hfref="#") About Me 
+            li.nav__item
+              a(hfref="#") Work
+            li.nav__item
+              a(hfref="#") Projects
+            li.nav__item
+              a(hfref="#") Contact   
+              
+      header.l-header.banner
+        div.content-wrapper
+          div.banner__text
+            span.banner__text--title Miguel Fondeur
+            hr
+            span.banner__text--sub UX/UI Developer
+
+      section.marketing-panel.clearfix#about
+        div.content-wrapper
+          h1.marketing-panel__title About Me
+          hr
+          p.marketing-panel__text 
+            | Hi, I'm a UX/UI Developer currently based in Orlando,FL. What is a 
+            | UX/UI Developer you ask? Well, in short, I create the things you see 
+            | and interact with on the web. And I make sure you feel good doing it.
+            | If you have a web project or just want to chat feel free to contact
+            | me below. 
+    
+      section.marketing-panel.clearfix.picture-overlay#work
+        div.content-wrapper
+          h1.marketing-panel__title Work
+          hr
+          div.row
+            div.col-sm-4
+              a(href="#")
+                img(src="images/s360.png")
+            div.col-sm-4
+              a(href="#")
+                img(src="images/aca.png")
+            div.col-sm-4
+              a(href="#")
+                img(src="images/jsp.png")
+            div.col-sm-4
+              a(href="#")
+                img(src="images/shesthefirst.png")
+            div.col-sm-4
+              a(href="#")
+                img(src="images/malltip.png")
+            div.col-sm-4
+              a(href="#")
+                img(src="images/s360.png")
+          
+      section.marketing-panel.clearfix#projects
+        div.content-wrapper
+          h1.marketing-panel__title Projects
+          hr
+          div.row
+            div.col-sm-4
+              a(href="#")
+                img(src="images/s360.png")
+            div.col-sm-4
+              a(href="#")
+                img(src="images/s360.png")
+            div.col-sm-4
+              a(href="#")
+                img(src="images/s360.png")
+        
+      section.marketing-panel.clearfix#contact 
+        div.content-wrapper
+          h1.marketing-panel__title Contact
+          hr
+          div.row
+            div.col-sm-6 
+              h2 Lets Talk 
+              div
+                label Email Address
+                input(type="text")
+              div
+                label Message 
+                textarea(cols="50") 
+            div.col-sm-6 
+              h2 Other Place
+              span.social-icon Linkedin
+              span.social-icon Facebook
+          
+    footer.l-footer
+      div.content-wrapper
+        span.copy Copyright &copy; Miguel Fondeur
+    

@@ -10,7 +10,8 @@ var gulp              = require('gulp'),
     sourcemaps        = require('gulp-sourcemaps'),
     jade              = require('gulp-jade'),
     browserSync       = require('browser-sync'),
-    watch             = require('gulp-watch');
+    watch             = require('gulp-watch'),
+    customMedia       = require('postcss-custom-media');
 
 
 //Styles
@@ -25,14 +26,15 @@ gulp.task('css', function() {
         'colorFunction': true,
         'customSelectors': true
       }),
-      csswring
+      csswring,
+      customMedia
   ];
 
   return gulp.src('source/stylesheets/style.css')
       .pipe( sourcemaps.init() )
       .pipe(postcss(processors))
       .pipe( sourcemaps.write('.') )
-      .pipe( gulp.dest('public/stylesheets/style') )
+      .pipe( gulp.dest('public/stylesheets/') )
 });
 
 //Jade
@@ -56,7 +58,6 @@ gulp.task('serve', ['css', 'jade'], function() {
     gulp.watch('css/**/*.css', ['css-watch']);
     gulp.watch('css/**/*.jade', ['jade-watch']);
 });
-
 
 
 //Default

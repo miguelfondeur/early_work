@@ -23,8 +23,6 @@ body {
 
   display: flex;
   flex-direction: column;
-
-  background-image: -webkit-radial-gradient(center center, circle cover, #fff 50%, #eee, lightblue 90%);
 }
 
 hr {
@@ -52,7 +50,7 @@ a {
 }
 
 a:hover {
-
+  cursor: pointer;
 }
 
 h1 {

@@ -1,0 +1,29 @@
+/* ==|====================
+   Modules/Banner
+   ======================= */
+
+.banner {
+  background: url(/images/banner.jpg) no-repeat center center fixed;
+  background-size: cover;
+  background-color: #444;
+  background-blend-mode: multiply;
+}
+
+.l-header.banner {
+
+}
+
+.banner__text {
+  text-align: center;
+  color: #fff;
+  padding-top: 200px;
+  padding-bottom: 300px;
+}
+
+.banner__text--title {
+  font-size: 6.4rem;
+}
+
+.banner__text--sub {
+  font-size: 3.6rem;
+}
