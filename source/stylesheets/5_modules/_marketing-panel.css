@@ -3,14 +3,19 @@
   ======================= */
 
 .marketing-panel {
-  padding: 100px 0;
+  padding: 130px 0;
   border-bottom: 4px solid black;
 }
 
-.marketing-panel__title, .marketing-panel__text {
+.panel--content {
   text-align: center;
-  width: 768px;
+  max-width: 768px;
   margin: 0 auto;
+}
+
+.panel--content p {
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 .picture-overlay {
@@ -18,4 +23,23 @@
   background-size: cover;
   background-color: #444;
   background-blend-mode: multiply;
+  color: #fff;
+}
+
+.panel-texture {
+  background: #eee url(/images/noise.png) repeat top left;
+}
+
+.panel--heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 2px solid;
+}
+
+.panel--subheading {
+  text-transform: none;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 75px;
 }

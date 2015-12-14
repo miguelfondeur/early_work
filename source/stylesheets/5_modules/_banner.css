@@ -22,8 +22,30 @@
 
 .banner__text--title {
   font-size: 6.4rem;
+  font-family: var(--font_title);
+  margin-bottom: -26px;
+  display: block;
+  z-index: 5;
+  position: relative;
+}
+.banner--header {
+  border-top: 4px solid;
+    border-bottom: 4px solid;
+    display: block;
+    color: lightblue;
+    line-height: 102px;
+    opacity: .7;
+    z-index: 1;
+}
+.banner__text--header {
+  font-family: var(--font_header);
+
+font-size: 100px;
+color: lightblue;
+letter-spacing: -2px;
 }
 
 .banner__text--sub {
   font-size: 3.6rem;
+  font-family: var(--font_sub);
 }

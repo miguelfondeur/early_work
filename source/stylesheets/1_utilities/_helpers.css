@@ -23,7 +23,7 @@
 	width: 1px;
 }
 
-/*Center alignment*/
+/*Text alignment*/
 
 .text-center {
 	text-align: center;
@@ -31,6 +31,10 @@
 
 .text-left {
   text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }
 
 /*Center elements*/
@@ -56,5 +60,5 @@
 }
 
 .opacity1 {
-  opacity: .95;
+  opacity: .9;
 }

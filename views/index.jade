@@ -6,24 +6,27 @@ block content
         div.content-wrapper
           div.banner__text
             span.banner__text--title Miguel Fondeur
-            hr
+            span.banner--header
+              h1.banner__text--header Born To Build
             span.banner__text--sub UX/UI Developer
 
-      section.marketing-panel.clearfix#about
+      section.marketing-panel.panel-texture.clearfix#about
         div.content-wrapper
-          h1.marketing-panel__title About Me
-          hr
-          p.marketing-panel__text 
-            | Hi, I'm a UX/UI Developer currently based in Orlando,FL. What is a 
-            | UX/UI Developer you ask? Well, in short, I create the things you see 
-            | and interact with on the web. And I make sure you feel good doing it.
-            | If you have a web project or just want to chat feel free to contact
-            | me below. 
-    
+          div.panel--content
+            h1.panel--heading About Me
+            h2.panel--subheading Developer / Designer / Drummer / 
+            p 
+              | Hi, I'm a UX/UI Developer currently based in Orlando,FL. What is a 
+              | UX/UI Developer you ask? Well, in short, I create the things you see 
+              | and interact with on the web. And I make sure you feel good doing it.
+              | If you have a web project or just want to chat feel free to contact
+              | me below. 
+      
       section.marketing-panel.clearfix.picture-overlay#work
         div.content-wrapper
-          h1.marketing-panel__title Work
-          hr
+          div.panel--content
+            h1.panel--heading Work
+            h2.panel--subheading Some of the Clients I've worked for
           div.row
             div.col-xs-4
               a(href="/s360")
@@ -43,39 +46,51 @@ block content
             div.col-xs-4
               a(href="/jsp")
                 img(src="images/tonycollinsthumb.png", alt="Tony Collins").opacity1
-          
-      section.marketing-panel.clearfix#projects
-        div.content-wrapper
-          h1.marketing-panel__title Projects
-          hr
-          div.row
-            div.col-sm-4
-              a(href="#")
-                img(src="images/s360.png")
-            div.col-sm-4
-              a(href="#")
-                img(src="images/s360.png")
-            div.col-sm-4
-              a(href="#")
-                img(src="images/s360.png")
-        
+      
       section.marketing-panel.clearfix#contact 
         div.content-wrapper
-          h1.marketing-panel__title Contact
-          hr
-          div.row
-            div.col-sm-6 
-              h2 Lets Talk 
-              div
-                label Email Address
-                input(type="text")
-              div
-                label Message 
-                textarea(cols="50") 
-            div.col-sm-6 
-              h2 Other Place
-              span.social-icon Linkedin
-              span.social-icon Github
-              span.social-icon Mail
+          div.panel--content
+            h1.panel--heading Contact
+            h2.panel--subheading Feel free to reach out
           
-    
+            div.row.text-left
+              div.col-sm-8 
+                h2 Lets Talk 
+                form
+                  div
+                    label Name
+                    input(type="text")
+                  div
+                    label Email Address
+                    input(type="text")
+                  div
+                    label Message 
+                    textarea(cols="50") 
+              div.col-sm-4
+                h2 Links
+                ul
+                  li  
+                    a(href="https://www.linkedin.com/in/miguelfondeur")
+                      i.icon-linkedin-1
+                      span LinkedIn
+                  li  
+                    a(href="https://github.com/miguelfondeur")
+                      i.icon-github-alt
+                      span Github   
+                  li  
+                    a 
+                      i.icon-codepen(href="https://www.codepen.io/miguelfondeur")
+                      span Codepen
+                  li  
+                    a(href="https://www.behance.net/mfondeur") 
+                      i.icon-behance-1
+                      span Behance
+                ul
+                  li
+                    a(href="mailto:miguelfondeur@gmail.com") 
+                      i.icon-envelope-o
+                      span Mail
+                  li  
+                    a(href="/static-files/miguelfondeur_resume.pdf", download)
+                      i.icon-file-pdf-o
+                      span Resume

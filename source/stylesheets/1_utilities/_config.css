@@ -4,9 +4,15 @@
 
 @charset "UTF-8";
 
-/*Google Fonts*/
-@import url(https://fonts.googleapis.com/css?family=Exo:400,300,200,500);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Parisienne);
+@font-face {
+  font-family: 'turnpike';
+  src: url('/fonts/turnpike.ttf') format('truetype');
+}
+
+
 
 :root {
 
@@ -17,9 +23,11 @@
   --font-weight_light       : 300;
   --font-weight_medium      : 400;
   --font-weight_bold        : 700;
-  --font_primary            : "Exo", serif;
-  --font_secondary          : "Lato", serif;
-
+  --font_primary            : "Lato", sans-serif;
+  --font_secondary          : "Open Sans", sans-serif;
+  --font_title              : "Parisienne", cursive;
+  --font_sub                : var(--font_secondary);
+  --font_header             : "turnpike", Franklin Gothic Medium, Arial Black;
 
   /*Colors*/
   --white           : white;
