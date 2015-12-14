@@ -7,7 +7,11 @@ var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 
 var routes = require('./routes/index');
-
+var jsp = require('./routes/jsp');
+var s360 = require('./routes/s360');
+var aca = require('./routes/aca');
+var shestf = require('./routes/shestf');
+var malltip = require('./routes/malltip');
 
 var app = express();
 
@@ -24,7 +28,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-
+app.use('/jsp', jsp);
+app.use('/s360', s360);
+app.use('/aca', aca);
+app.use('/shestf', shestf);
+app.use('/malltip', malltip);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

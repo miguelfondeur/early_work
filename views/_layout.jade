@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title #{title}: Miguel Fondeur's Portfolio  
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='Miguel Fondeurs Portfolio')
+    meta(name='viewport', content='width=device-width, initial-scale=1') 
+    
+    link(rel='stylesheet', href='/stylesheets/style.css')
+     
+  body
+    main.main-wrapper
+      
+      div.main-content
+        
+        nav.navbar.navbar--top
+          div.content-wrapper     
+            ul.nav.nav--left
+              li.nav__item.nav__title
+                a(href="/") Miguel Fondeur
+              li.nav__item
+                a(href="#") About Me 
+              li.nav__item
+                a(href="#") Work
+              li.nav__item
+                a(href="#") Projects
+              li.nav__item
+                a(href="#") Contact   
+                  
+        block content
+
+      footer.l-footer
+        div.content-wrapper
+          div.text-center Copyright &copy; Miguel Fondeur 2015
+      
+  

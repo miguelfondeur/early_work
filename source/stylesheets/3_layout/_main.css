@@ -5,6 +5,9 @@
 .main-wrapper {
   overflow: scroll;
   width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .content-wrapper {
@@ -14,6 +17,12 @@
 
 .main-content {
   flex: 1 0 auto;
+}
+
+.container-static {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 120px;
 }
 
 @media(--max_container) {

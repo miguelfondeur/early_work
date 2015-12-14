@@ -1,24 +1,7 @@
-extends layout
+extends _layout
 
 block content
-  main.main-wrapper
-    
-    div.main-content
-      
-      nav.navbar.navbar--top
-        div.content-wrapper     
-          ul.nav.nav--left
-            li.nav__item.nav__title
-              a(hfref="#") Miguel Fondeur
-            li.nav__item
-              a(hfref="#") About Me 
-            li.nav__item
-              a(hfref="#") Work
-            li.nav__item
-              a(hfref="#") Projects
-            li.nav__item
-              a(hfref="#") Contact   
-              
+
       header.l-header.banner
         div.content-wrapper
           div.banner__text
@@ -42,24 +25,24 @@ block content
           h1.marketing-panel__title Work
           hr
           div.row
-            div.col-sm-4
-              a(href="#")
-                img(src="images/s360.png")
-            div.col-sm-4
-              a(href="#")
-                img(src="images/aca.png")
-            div.col-sm-4
-              a(href="#")
-                img(src="images/jsp.png")
-            div.col-sm-4
-              a(href="#")
-                img(src="images/shesthefirst.png")
-            div.col-sm-4
-              a(href="#")
-                img(src="images/malltip.png")
-            div.col-sm-4
-              a(href="#")
-                img(src="images/s360.png")
+            div.col-xs-4
+              a(href="/s360")
+                img(src="images/s360thumb.png", alt="Simply360").opacity1
+            div.col-xs-4
+              a(href="/aca")
+                img(src="images/acathumb.png", alt="American Camp Association").opacity1
+            div.col-xs-4
+              a(href="/jsp")
+                img(src="images/jspthumb.png", alt="JSP Homecare NY").opacity1
+            div.col-xs-4
+              a(href="/shestf")
+                img(src="images/shesthefirstthumb.png", alt="She's the First").opacity1
+            div.col-xs-4
+              a(href="/malltip")
+                img(src="images/malltipthumb.png", alt="Malltip").opacity1
+            div.col-xs-4
+              a(href="/jsp")
+                img(src="images/tonycollinsthumb.png", alt="Tony Collins").opacity1
           
       section.marketing-panel.clearfix#projects
         div.content-wrapper
@@ -92,9 +75,7 @@ block content
             div.col-sm-6 
               h2 Other Place
               span.social-icon Linkedin
-              span.social-icon Facebook
+              span.social-icon Github
+              span.social-icon Mail
           
-    footer.l-footer
-      div.content-wrapper
-        span.copy Copyright &copy; Miguel Fondeur
     

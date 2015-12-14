@@ -15,14 +15,9 @@ html {
 body {
   margin: 0px;
   font-family: var(--font_secondary);
-  font-weight: 300;
   font-size: 1.6rem;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: column;
 }
 
 hr {
@@ -69,12 +64,12 @@ h2 {
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 p {

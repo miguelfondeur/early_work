@@ -47,6 +47,14 @@
 
 /*Thumbnail*/
 .thumb {
-  border: 1px solid #ccc;
+  background: #eee;
   padding: 10px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.opacity1 {
+  opacity: .95;
 }
