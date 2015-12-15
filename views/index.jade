@@ -30,22 +30,22 @@ block content
           div.row
             div.col-xs-4
               a(href="/s360")
-                img(src="images/s360thumb.png", alt="Simply360").opacity1
+                img(src="images/s360thumb.png", alt="Simply360").opacity1.thumb
             div.col-xs-4
               a(href="/aca")
-                img(src="images/acathumb.png", alt="American Camp Association").opacity1
+                img(src="images/acathumb.png", alt="American Camp Association").opacity1.thumb
             div.col-xs-4
               a(href="/jsp")
-                img(src="images/jspthumb.png", alt="JSP Homecare NY").opacity1
+                img(src="images/jspthumb.png", alt="JSP Homecare NY").opacity1.thumb
             div.col-xs-4
               a(href="/shestf")
-                img(src="images/shesthefirstthumb.png", alt="She's the First").opacity1
+                img(src="images/shesthefirstthumb.png", alt="She's the First").opacity1.thumb
             div.col-xs-4
               a(href="/malltip")
-                img(src="images/malltipthumb.png", alt="Malltip").opacity1
+                img(src="images/malltipthumb.png", alt="Malltip").opacity1.thumb
             div.col-xs-4
               a(href="/jsp")
-                img(src="images/tonycollinsthumb.png", alt="Tony Collins").opacity1
+                img(src="images/tonycollinsthumb.png", alt="Tony Collins").opacity1.thumb
       
       section.marketing-panel.clearfix#contact 
         div.content-wrapper
@@ -68,29 +68,32 @@ block content
                     textarea(cols="50") 
               div.col-sm-4
                 h2 Links
-                ul
-                  li  
-                    a(href="https://www.linkedin.com/in/miguelfondeur")
+                
+                h3 Social
+                ul.link-nav
+                  li.link-nav__item  
+                    a(href="https://www.linkedin.com/in/miguelfondeur").round-icon
                       i.icon-linkedin-1
-                      span LinkedIn
-                  li  
-                    a(href="https://github.com/miguelfondeur")
+                        
+                  li.link-nav__item   
+                    a(href="https://github.com/miguelfondeur").round-icon
                       i.icon-github-alt
-                      span Github   
-                  li  
-                    a 
-                      i.icon-codepen(href="https://www.codepen.io/miguelfondeur")
-                      span Codepen
-                  li  
-                    a(href="https://www.behance.net/mfondeur") 
+          
+                  li.link-nav__item   
+                    a(href="https://www.codepen.io/miguelfondeur").round-icon 
+                      i.icon-codepen
+                    
+                  li.link-nav__item   
+                    a(href="https://www.behance.net/mfondeur").round-icon 
                       i.icon-behance-1
-                      span Behance
-                ul
-                  li
-                    a(href="mailto:miguelfondeur@gmail.com") 
+                    
+                h3 Other
+                ul.link-nav
+                  li.link-nav__item 
+                    a(href="mailto:miguelfondeur@gmail.com").round-icon 
                       i.icon-envelope-o
-                      span Mail
-                  li  
-                    a(href="/static-files/miguelfondeur_resume.pdf", download)
+                  
+                  li.link-nav__item   
+                    a(href="/static-files/miguelfondeur_resume.pdf", download).round-icon
                       i.icon-file-pdf-o
-                      span Resume
+            

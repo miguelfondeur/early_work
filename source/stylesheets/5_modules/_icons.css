@@ -1,3 +1,33 @@
 /* ==|====================
    Modules/Icons
    ======================= */
+
+/*Round Icons*/
+
+.round-icon {
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  margin-right: 10px;
+  transition: background-color 0.1s ease-in, border 0.1s ease-in;
+}
+
+.round-icon i {
+  position: absolute;
+  top: 8px;
+  left: 11px;
+  font-size: 26px;
+  color: black;
+}
+
+.round-icon:hover {
+  background: #6194BC;
+  border-color: #45667F;
+}
+
+.round-icon:hover i {
+  color: #fff;
+}
