@@ -51,8 +51,9 @@
 
 /*Thumbnail*/
 .thumb {
-  background: #eee;
-  padding: 10px;
+  background: #ddd;
+  border: 1px solid #b9b9b9;
+  padding: 9px;
 }
 
 .bold {

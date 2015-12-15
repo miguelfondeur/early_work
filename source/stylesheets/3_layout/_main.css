@@ -17,6 +17,7 @@
 
 .main-content {
   flex: 1 0 auto;
+  background: url("/images/noise.png");
 }
 
 .container-static {

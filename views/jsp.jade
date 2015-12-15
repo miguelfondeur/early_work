@@ -2,13 +2,24 @@ extends _layout
 
 block content
   div.container-static
+    h1.portfolio--title #{title}
+    span.portfolio--title__date 2015
+    h3 HTML, CSS, Ember, Responsive 
+    br
+      
     div.row
       div.col-sm-8
-          img.thumb(src="images/s360.png", alt="Simply360 Card View")
-          img.thumb(src="images/s360.png", alt="Simply360 Card View")
+        img.thumb(src="images/s360/s360-people.jpg", alt="Simply360 Card View")
+        img.thumb(src="images/s360/s360-report.jpg", alt="Simply360 Card View")
+        img.thumb(src="images/s360/s360-kiosk.jpg", alt="Simply360 Card View")
+        div.row  
+          div.col-sm-6
+            img.thumb(src="images/s360/s360-people_mobile.jpg", alt="Simply360 Card View")
+          div.col-sm-6
+            img.thumb(src="images/s360/s360-menu_mobile.jpg", alt="Simply360 Card View")
+
       div.col-sm-4
-        h2 #{title}
-        span HTML, CSS, Ember, Responsive 
-        
+        h3 Description
+        hr
         p Simply360 is a NY based startup that caters to non-profits by providing all software solutions they could need. 
         | I was responsible for taking the designs to the web. I created the full UI Kit and implemented all design ideas. 

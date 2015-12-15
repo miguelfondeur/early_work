@@ -1,0 +1,15 @@
+/* ==|====================
+   Modules/Portfolio
+   ======================= */
+
+.portfolio--title {
+  display: inline;
+}
+
+.portfolio--title__date {
+  font-size: 42px;
+  color: #b9b9b9;
+  text-align: right;
+  display: inline;
+  float: right;
+}
