@@ -26,20 +26,30 @@
   color: #fff;
 }
 
+.picture-overlay .panel--heading {
+  color: #6194bc;
+}
+
+.picture-overlay .panel--subheading {
+  font-weight: 400;
+}
+
 .panel-texture {
   background: #eee url(/images/noise.png) repeat top left;
 }
 
 .panel--heading {
-  font-size: 40px;
   margin-top: 0;
-  margin-bottom: 15px;
-  border-bottom: 2px solid;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #aaa;
+  color: #45667f;
 }
 
 .panel--subheading {
   text-transform: none;
-  font-style: italic;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 75px;
+  color: #707070;
+  font-family: 'Lato',sans-serif;
 }

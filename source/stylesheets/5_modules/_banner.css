@@ -46,6 +46,11 @@ letter-spacing: -2px;
 }
 
 .banner__text--sub {
-  font-size: 3.6rem;
-  font-family: var(--font_sub);
+  font-size: 3.2rem;
+  font-family: Lato,sans-serif;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  font-weight: 200;
+  padding-top: 5px;
+  display: block;
 }

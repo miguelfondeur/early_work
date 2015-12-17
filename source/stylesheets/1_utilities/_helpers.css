@@ -63,3 +63,9 @@
 .opacity1 {
   opacity: .9;
 }
+
+/*Display*/
+.block {
+  display: block;
+  position: relative;
+}

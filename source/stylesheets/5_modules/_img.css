@@ -6,3 +6,33 @@
    width: 100%;
    margin-bottom: 10px;
  }
+
+.thumbnail-caption {
+  background: #6194bc;
+  z-index: 1;
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transition: all .35s;
+  height: calc(100% - 15px);
+  top: 0;
+}
+
+.thumbnail-caption i {
+  font-size: 70px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: -35px;
+  margin-left: -35px;
+}
+
+a:hover .thumb + .thumbnail-caption {
+  opacity: .8;
+}
