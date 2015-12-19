@@ -25,25 +25,31 @@
   justify-content: flex-end;
   height: 70px;
 }
+.nav__item {
+  font-family: Lato,sans-serif;
+  font-variant: small-caps;
+}
 
 .nav__item a{
   padding: 10px 15px;
-  color: gray;
+  color: #000;
+  font-weight: 400;
+  font-size: 1.17em;
 }
 
-.nav__title {
+.nav__item.nav__title {
   margin-right: auto;
-  font-family: parisienne;
   font-size: 32px;
+  font-variant: normal;
 }
 
-.nav__title a {
+.nav__item.nav__title a {
+  font-family: var(--font_title);
   color: black;
-  font-weight: 500;
   font-size: 3rem;
 }
 
-.nav__title a:hover {
+.nav__item a:hover {
   color: #45667f;
 }
 

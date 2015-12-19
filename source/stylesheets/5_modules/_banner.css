@@ -32,17 +32,16 @@
   border-top: 4px solid;
     border-bottom: 4px solid;
     display: block;
-    color: lightblue;
+    color: #6194bc;
     line-height: 102px;
-    opacity: .7;
+    opacity: .75;
     z-index: 1;
 }
 .banner__text--header {
   font-family: var(--font_header);
-
-font-size: 100px;
-color: lightblue;
-letter-spacing: -2px;
+  font-size: 100px;
+  color: #6194bc;
+  letter-spacing: -2px;
 }
 
 .banner__text--sub {
