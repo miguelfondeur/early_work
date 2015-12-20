@@ -38,3 +38,10 @@
     width: 1200px;
   }
 }
+
+@media (max-width: 1000px) {
+  .content-wrapper {
+      width: 100%;
+      padding: 0 20px;
+  }
+}
