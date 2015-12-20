@@ -77,4 +77,7 @@
   .nav {
     justify-content: center;
   }
+  .navbar .content-wrapper {
+    padding: 0px;
+  }
 }
