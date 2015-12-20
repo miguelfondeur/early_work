@@ -21,7 +21,7 @@
 }
 
 .container-static {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   padding-top: 120px;
   padding-bottom: 60px;
@@ -43,5 +43,8 @@
   .content-wrapper {
       width: 100%;
       padding: 0 20px;
+  }
+  .container-static {
+    padding: 85px 25px;
   }
 }

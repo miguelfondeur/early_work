@@ -62,3 +62,16 @@
 .link-nav__item {
   display: inline;
 }
+
+
+@media (max-width: 480px) {
+  .nav__title {
+    display: none;
+  }
+  .nav__item.show-mobile {
+    display: inline;
+  }
+  .link-nav {
+    text-align: center;
+  }
+}

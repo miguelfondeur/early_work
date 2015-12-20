@@ -53,3 +53,16 @@
   color: #707070;
   font-family: 'Lato',sans-serif;
 }
+
+@media (max-width: 480px) {
+  .marketing-panel {
+    padding: 100px 0px;
+  }
+  .panel--subheading {
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+  }
+  .panel--content p {
+    font-size: 1.6rem;
+  }
+}

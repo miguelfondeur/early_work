@@ -59,6 +59,14 @@
   display: none;
 }
 
+.show-mobile {
+  display: none;
+}
+
+.hide-mobile {
+  display: inline;
+}
+
 /*Thumbnail*/
 .thumb {
   background: #ddd;
@@ -78,4 +86,10 @@
 .block {
   display: block;
   position: relative;
+}
+
+@media (max-width: 480px) {
+  .hide-mobile {
+    display: none;
+  }
 }
