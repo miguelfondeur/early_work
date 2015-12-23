@@ -68,16 +68,16 @@ block content
             div.row.text-left
               div.col-sm-8.col-xs-12 
                 h2 Lets Talk 
-                form
+                form(method="post", action="/send")
                   div
                     label Name
-                    input(type="text")
+                    input(type="text", name="name")
                   div
                     label Email Address
-                    input(type="text")
+                    input(type="text", name="email")
                   div
                     label Message 
-                    textarea(cols="50") 
+                    textarea(cols="50", name="message") 
                   div
                     input(type="submit", value="Send Message").btn.float-right.mobile-btn 
               div.col-sm-4.col-xs-12
