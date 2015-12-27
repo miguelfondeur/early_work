@@ -16,5 +16,17 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bouncefix.js": "~0.3.0",
+    "jquery": "~2.1.4"
+  },
+  "overrides": {
+    "bouncefix.js": {
+      "main": ["**/dist/bouncefix.min.js"]
+    },
+    "jquery": {
+      "main": "**/dist/jquery.min.js"
+    }
+  }
 }

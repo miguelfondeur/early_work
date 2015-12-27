@@ -68,6 +68,9 @@
   .nav__title {
     display: none;
   }
+  .nav__item a {
+    font-size: 1.6rem;
+  }
   .nav__item.show-mobile {
     display: inline;
   }

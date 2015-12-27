@@ -68,16 +68,22 @@ block content
             div.row.text-left
               div.col-sm-8.col-xs-12 
                 h2 Lets Talk 
-                form(method="post", action="/send")
+                
+                ul.errors
+                  if errors
+                    each error, i in errors
+                      li #{error.msg}
+                
+                form(method="post", action="/send", enctype="multipart/form-data")
                   div
                     label Name
-                    input(type="text", name="name")
+                    input(type="text", name="name", placeholder="Enter Name", required)
                   div
                     label Email Address
-                    input(type="text", name="email")
+                    input(type="email", name="email", placeholder="Enter Email", required)
                   div
                     label Message 
-                    textarea(cols="50", name="message") 
+                    textarea(cols="50", name="message", placeholder="Enter Message", required) 
                   div
                     input(type="submit", value="Send Message").btn.float-right.mobile-btn 
               div.col-sm-4.col-xs-12

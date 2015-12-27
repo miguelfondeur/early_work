@@ -1,64 +1,34 @@
 'use strict';
 
-var gulp              = require('gulp'),
-    postcss           = require('gulp-postcss'),
-    autoprefixer      = require('autoprefixer'),
-    atImport          = require('postcss-import'),
-    cssnext           = require('cssnext'),
-    csswring          = require('csswring'),
-    mqpacker          = require('css-mqpacker'),
-    sourcemaps        = require('gulp-sourcemaps'),
-    jade              = require('gulp-jade'),
-    browserSync       = require('browser-sync'),
-    watch             = require('gulp-watch'),
-    customMedia       = require('postcss-custom-media');
+var gulp                = require('gulp'),
+    browserSync         = require('browser-sync'),
+    watch               = require('gulp-watch'),
+    requireDir          = require('require-dir'),
+    gls                 = require('gulp-live-server');
 
-
-//Styles
-gulp.task('css', function() {
-
-  var processors = [
-      autoprefixer({browsers: ['last 2 version']}),
-      mqpacker,
-      atImport,
-      cssnext({
-        'customProperties': true,
-        'colorFunction': true,
-        'customSelectors': true
-      }),
-      csswring,
-      customMedia
-  ];
-
-  return gulp.src('source/stylesheets/style.css')
-      .pipe( sourcemaps.init() )
-      .pipe(postcss(processors))
-      .pipe( sourcemaps.write('.') )
-      .pipe( gulp.dest('public/stylesheets/') )
-});
-
-//Jade
-gulp.task('jade', function() {
-  return gulp.src('views/**/*.jade')
-    .pipe(jade({ pretty: true })
-          .on('error', function (error) { console.warn(error.message); }))
-    .pipe(gulp.dest('public/'))
-});
+requireDir('./gulp_tasks');
 
 //Watch
-gulp.task('css-watch', ['css'], browserSync.reload);
-gulp.task('jade-watch', ['jade'], browserSync.reload);
-
-
-//Serve
-gulp.task('serve', ['css', 'jade'], function() {
-    browserSync.init({
-        server: "./public"
-    });
-    gulp.watch('css/**/*.css', ['css-watch']);
-    gulp.watch('css/**/*.jade', ['jade-watch']);
+gulp.task('watchFiles', function() {
+  gulp.watch('source/stylesheets/**/*.css', ['css']);
+  gulp.watch('source/js/*.js', ['minifyScripts']);
+  gulp.watch('views/*.jade');
 });
 
+//Serve
+gulp.task('serve', function() {
+  //1. serve with default settings
+  var server = gls.static('public', 3000);
+  server.start();
+
+  //use gulp.watch to trigger server actions(notify, start or stop)
+  gulp.watch(['watchFiles'], function (file) {
+    server.notify.apply(server, [file]);
+  });
+});
+
+//Build
+gulp.task('build', ['minifyScripts', 'css', 'bower']);
 
 //Default
-gulp.task('default', ['serve']);
+gulp.task('default', ['build']);

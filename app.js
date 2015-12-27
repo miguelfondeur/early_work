@@ -1,18 +1,19 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var nodemailer = require('nodemailer');
+var express       = require('express'),
+    path          = require('path'),
+    favicon       = require('serve-favicon'),
+    logger        = require('morgan'),
+    cookieParser  = require('cookie-parser'),
+    bodyParser    = require('body-parser'),
+    nodemailer    = require('nodemailer');
 
-var routes      = require('./routes/index');
-var jsp         = require('./routes/jsp');
-var s360        = require('./routes/s360');
-var aca         = require('./routes/aca');
-var shestf      = require('./routes/shestf');
-var malltip     = require('./routes/malltip');
-var tonycollins = require('./routes/tonycollins');
+//Routes
+var routes        = require('./routes/index'),
+    jsp           = require('./routes/jsp'),
+    s360          = require('./routes/s360'),
+    aca           = require('./routes/aca'),
+    shestf        = require('./routes/shestf'),
+    malltip       = require('./routes/malltip'),
+    tonycollins   = require('./routes/tonycollins');
 
 var app = express();
 

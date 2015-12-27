@@ -78,10 +78,14 @@
 @media (max-width: 480px) {
   .banner--header {
     margin: 0;
-    line-height: 55px;
+    line-height: 45px;
   }
   .banner__text--header {
-    font-size: 50px;
+    font-size: 40px;
+  }
+  .banner__text--title{
+    font-size: 3.6rem;
+    margin-bottom: -14px;
   }
   .banner-text {
     padding: 100px 0px;

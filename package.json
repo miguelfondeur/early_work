@@ -16,16 +16,24 @@
     "debug": "~2.2.0",
     "express": "~4.13.1",
     "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
     "gulp-jade": "^1.1.0",
+    "gulp-live-server": "0.0.29",
     "gulp-nodemon": "^2.0.4",
     "gulp-postcss": "^6.0.1",
     "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
     "gulp-watch": "^4.3.5",
     "jade": "~1.11.0",
+    "main-bower-files": "^2.11.0",
     "morgan": "~1.6.1",
     "nodemailer": "^1.10.0",
     "postcss-custom-media": "^5.0.0",
     "postcss-import": "^7.1.3",
+    "require-dir": "^0.3.0",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "gulp-load-plugins": "^1.1.0"
   }
 }
