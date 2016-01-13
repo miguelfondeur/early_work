@@ -23,7 +23,7 @@
   },
   "overrides": {
     "bouncefix.js": {
-      "main": ["**/dist/bouncefix.min.js"]
+      "main": "**/dist/bouncefix.min.js"
     },
     "jquery": {
       "main": "**/dist/jquery.min.js"

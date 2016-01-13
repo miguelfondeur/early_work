@@ -164,3 +164,16 @@
 #content-wrapper.toggled .content-area .main-nav .lines-button.x .lines:after {
   transform: rotate3d(0, 0, 1, -45deg);
 }
+
+.btn.mobile-btn {
+  background: rgb(97, 148, 188);
+  border:2px solid rgb(69, 102, 127);
+  color: white;
+  transition: background-color 0.1s ease-in, border 0.1s ease-in;
+}
+  .btn.mobile-btn:hover {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    transition: background-color 0.1s ease-in, border 0.1s ease-in;
+  }
