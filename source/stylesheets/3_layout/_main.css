@@ -5,8 +5,8 @@
 .main-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  overflow: scroll;
+  height: 100vh;
+  overflow: auto;
   -webkit-overflow-scrolling: touch;
   width: 100%;
 }
