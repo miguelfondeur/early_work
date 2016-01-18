@@ -65,4 +65,7 @@
   .panel--content p {
     font-size: 1.6rem;
   }
+  .picture-overlay {
+    background: var(--black);
+  }
 }
